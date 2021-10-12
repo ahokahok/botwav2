@@ -65,7 +65,7 @@ const atm = require("./lib/atm");
 
 const _sewa = require("./lib/sewa");
 
-var kuis = true
+var kuis = false
 hit_today = []
 ky_ttt = []
 const setGelud = require('./lib/gameGelud.js')
@@ -6693,8 +6693,9 @@ case 'caripesan':  //by ANU TEAM
              reply('SC NYA KOK DIKIT BANG?\n YANG PENTING BOT GW JALAN ')
              break
 case 'dmcandy':
-       if (!isRegistered) return reply(ind.only.daftarB)
-       wibu = `     
+       gopeynya = 'https://l.top4top.io/p_2110fqt7w0.jpg'
+              buff = await getBuffer(gopeynya)
+              teksnya = `
 *「CANDY SAUSAGE」*
 ━━━━━━━━━━━━━━━━━━━━
 • *60 CANDY SAUSAGE = Rp 16.000*
@@ -6714,19 +6715,17 @@ HUBUNGI NOMOR DI BAWAH INI
 http://wa.me/+62857364389903
 
 `
-                   sendButMessage(from, wibu, `Reteam.id`, [
-          {
-            buttonId: `!menu`,
-            buttonText: {
-              displayText: `⬡ 🔙BACK TO MENU `,
-            },
-            type: 1,
-          },]);
-
-             break
+  buttons = [{buttonId: `${prefix}owner`,buttonText:{displayText: `OWNER`},type:1},{buttonId: `${prefix}donasi`,buttonText:{displayText: `PAYMENT`},type:1}]
+              imageMsg = (await ikyy.prepareMessageMedia(buff, "imageMessage", { thumbnail: buff, })).imageMessage
+              buttonsMessage = {footerText:'Reteam.bot', imageMessage: imageMsg,
+              contentText: teksnya,buttons,headerType:4}
+              prep = await ikyy.prepareMessageFromContent(from,{buttonsMessage},{quoted: freply})
+              ikyy.relayWAMessage(prep)
+      break
 case 'dmragnarok':
-       if (!isRegistered) return reply(ind.only.daftarB)
-       wibu = `
+       gopeynya = 'https://l.top4top.io/p_2110fqt7w0.jpg'
+              buff = await getBuffer(gopeynya)
+              teksnya = `
 *「CAT COIN RAGNAROK」*
 ━━━━━━━━━━━━━━━━━━━━
 • *1 BIG CAT COIN = Rp 6.000*
@@ -6746,19 +6745,17 @@ HUBUNGI NOMOR DI BAWAH INI
 http://wa.me/+62857364389903
 
 `
-                   sendButMessage(from, wibu, `Reteam.id`, [
-          {
-            buttonId: `!menu`,
-            buttonText: {
-              displayText: `⬡ 🔙BACK TO MENU `,
-            },
-            type: 1,
-          },]);
-
-             break
+  buttons = [{buttonId: `${prefix}owner`,buttonText:{displayText: `OWNER`},type:1},{buttonId: `${prefix}donasi`,buttonText:{displayText: `PAYMENT`},type:1}]
+              imageMsg = (await ikyy.prepareMessageMedia(buff, "imageMessage", { thumbnail: buff, })).imageMessage
+              buttonsMessage = {footerText:'Reteam.bot', imageMessage: imageMsg,
+              contentText: teksnya,buttons,headerType:4}
+              prep = await ikyy.prepareMessageFromContent(from,{buttonsMessage},{quoted: freply})
+              ikyy.relayWAMessage(prep)
+      break
       case 'dmpubg':
-       if (!isRegistered) return reply(ind.only.daftarB)
-       wibu = `
+       gopeynya = 'https://l.top4top.io/p_2110fqt7w0.jpg'
+              buff = await getBuffer(gopeynya)
+              teksnya = `
 *「UC PUBG」*
 ━━━━━━━━━━━━━━━━━━━━
 • *25 UC = Rp 8.000*
@@ -6789,19 +6786,17 @@ HUBUNGI NOMOR DI BAWAH INI
 http://wa.me/+62857364389903
 
 `
-                   sendButMessage(from, wibu, `Reteam.id`, [
-          {
-            buttonId: `!menu`,
-            buttonText: {
-              displayText: `⬡ 🔙BACK TO MENU `,
-            },
-            type: 1,
-          },]);
-
-             break
+  buttons = [{buttonId: `${prefix}owner`,buttonText:{displayText: `OWNER`},type:1},{buttonId: `${prefix}donasi`,buttonText:{displayText: `PAYMENT`},type:1}]
+              imageMsg = (await ikyy.prepareMessageMedia(buff, "imageMessage", { thumbnail: buff, })).imageMessage
+              buttonsMessage = {footerText:'Reteam.bot', imageMessage: imageMsg,
+              contentText: teksnya,buttons,headerType:4}
+              prep = await ikyy.prepareMessageFromContent(from,{buttonsMessage},{quoted: freply})
+              ikyy.relayWAMessage(prep)
+      break
       case 'dmpb':
-       if (!isRegistered) return reply(ind.only.daftarB)
-       wibu = `
+       gopeynya = 'https://l.top4top.io/p_2110fqt7w0.jpg'
+              buff = await getBuffer(gopeynya)
+              teksnya = `
 *「CASH POIN BLANK」*
 ━━━━━━━━━━━━━━━━━━━━
 • *1200 PB CASH = Rp 11.000*
@@ -6819,19 +6814,17 @@ HUBUNGI NOMOR DI BAWAH INI
 http://wa.me/+62857364389903
 
 `
-                   sendButMessage(from, wibu, `Reteam.id`, [
-          {
-            buttonId: `!menu`,
-            buttonText: {
-              displayText: `⬡ 🔙BACK TO MENU `,
-            },
-            type: 1,
-          },]);
-
-             break
+  buttons = [{buttonId: `${prefix}owner`,buttonText:{displayText: `OWNER`},type:1},{buttonId: `${prefix}donasi`,buttonText:{displayText: `PAYMENT`},type:1}]
+              imageMsg = (await ikyy.prepareMessageMedia(buff, "imageMessage", { thumbnail: buff, })).imageMessage
+              buttonsMessage = {footerText:'Reteam.bot', imageMessage: imageMsg,
+              contentText: teksnya,buttons,headerType:4}
+              prep = await ikyy.prepareMessageFromContent(from,{buttonsMessage},{quoted: freply})
+              ikyy.relayWAMessage(prep)
+      break
       case 'dmcod':
-       if (!isRegistered) return reply(ind.only.daftarB)
-       wibu = `
+       gopeynya = 'https://l.top4top.io/p_2110fqt7w0.jpg'
+              buff = await getBuffer(gopeynya)
+              teksnya = `
 *「CP CALL OF DUTTY」*
 ━━━━━━━━━━━━━━━━━━━━
 • *26 + 5 CP = Rp 7.000*
@@ -6851,18 +6844,17 @@ HUBUNGI NOMOR DI BAWAH INI
 http://wa.me/+62857364389903
 
 `
-                   sendButMessage(from, wibu, `Reteam.id`, [
-          {
-            buttonId: `!menu`,
-            buttonText: {
-              displayText: `⬡ 🔙BACK TO MENU `,
-            },
-            type: 1,
-          },]);
-          break
+  buttons = [{buttonId: `${prefix}owner`,buttonText:{displayText: `OWNER`},type:1},{buttonId: `${prefix}donasi`,buttonText:{displayText: `PAYMENT`},type:1}]
+              imageMsg = (await ikyy.prepareMessageMedia(buff, "imageMessage", { thumbnail: buff, })).imageMessage
+              buttonsMessage = {footerText:'Reteam.bot', imageMessage: imageMsg,
+              contentText: teksnya,buttons,headerType:4}
+              prep = await ikyy.prepareMessageFromContent(from,{buttonsMessage},{quoted: freply})
+              ikyy.relayWAMessage(prep)
+      break
        case 'dmml':
-       if (!isRegistered) return reply(ind.only.daftarB)
-       wibu = `
+       gopeynya = 'https://l.top4top.io/p_2110fqt7w0.jpg'
+              buff = await getBuffer(gopeynya)
+              teksnya = `
 *「DIAMOND MOBA」*
 
 ━━━━━━━━━━━━━━━━━━━━
@@ -6896,19 +6888,17 @@ HUBUNGI NOMOR DI BAWAH INI
 http://wa.me/+62857364389903
 
 `
-                   sendButMessage(from, wibu, `Reteam.id`, [
-          {
-            buttonId: `!menu`,
-            buttonText: {
-              displayText: `⬡ 🔙BACK TO MENU `,
-            },
-            type: 1,
-          },]);
-
-             break
+  buttons = [{buttonId: `${prefix}owner`,buttonText:{displayText: `OWNER`},type:1},{buttonId: `${prefix}donasi`,buttonText:{displayText: `PAYMENT`},type:1}]
+              imageMsg = (await ikyy.prepareMessageMedia(buff, "imageMessage", { thumbnail: buff, })).imageMessage
+              buttonsMessage = {footerText:'Reteam.bot', imageMessage: imageMsg,
+              contentText: teksnya,buttons,headerType:4}
+              prep = await ikyy.prepareMessageFromContent(from,{buttonsMessage},{quoted: freply})
+              ikyy.relayWAMessage(prep)
+      break
        case 'dmff':
-       if (!isRegistered) return reply(ind.only.daftarB)
-       wibu = `
+   gopeynya = 'https://l.top4top.io/p_2110fqt7w0.jpg'
+              buff = await getBuffer(gopeynya)
+              teksnya = `
 *「DIAMOND FREEFIRE」*
 ━━━━━━━━━━━━━━━━━━━━
 
@@ -6947,17 +6937,13 @@ http://wa.me/+62857364389903
 
 
 `
-                   sendButMessage(from, wibu, `Reteam.id`, [
-          {
-            buttonId: `!menu`,
-            buttonText: {
-              displayText: `⬡ 🔙BACK TO MENU `,
-            },
-            type: 1,
-          },]);
-        break;
-      
-      
+  buttons = [{buttonId: `${prefix}owner`,buttonText:{displayText: `OWNER`},type:1},{buttonId: `${prefix}donasi`,buttonText:{displayText: `PAYMENT`},type:1}]
+              imageMsg = (await ikyy.prepareMessageMedia(buff, "imageMessage", { thumbnail: buff, })).imageMessage
+              buttonsMessage = {footerText:'Reteam.bot', imageMessage: imageMsg,
+              contentText: teksnya,buttons,headerType:4}
+              prep = await ikyy.prepareMessageFromContent(from,{buttonsMessage},{quoted: freply})
+              ikyy.relayWAMessage(prep)
+      break
       case 'jadibot':
              if (!isPremium) return  reply(mess.only.premium)
              const _0x5f10=['1ubdcbO','202171TkLMwo','284052dVVNCo','42JxCsde','24890OaehfM','./jadibot.js','26826mdmYhJ','176EqLcNV','55194kArISZ','6GRvhmu','314893OwJFDH'];const _0x470b71=_0x5476;function _0x5476(_0x56372d,_0x51b653){return _0x5476=function(_0x5f107a,_0x54761a){_0x5f107a=_0x5f107a-0xd8;let _0x336fbf=_0x5f10[_0x5f107a];return _0x336fbf;},_0x5476(_0x56372d,_0x51b653);}(function(_0x4b0f8a,_0x1f534e){const _0x1acfb6=_0x5476;while(!![]){try{const _0x55ab94=-parseInt(_0x1acfb6(0xdc))+parseInt(_0x1acfb6(0xe2))*parseInt(_0x1acfb6(0xde))+-parseInt(_0x1acfb6(0xe1))*parseInt(_0x1acfb6(0xdb))+parseInt(_0x1acfb6(0xda))+-parseInt(_0x1acfb6(0xdd))+parseInt(_0x1acfb6(0xdf))+parseInt(_0x1acfb6(0xd8))*parseInt(_0x1acfb6(0xd9));if(_0x55ab94===_0x1f534e)break;else _0x4b0f8a['push'](_0x4b0f8a['shift']());}catch(_0x4a8ec9){_0x4b0f8a['push'](_0x4b0f8a['shift']());}}}(_0x5f10,0x285aa));const {jadibot}=require(_0x470b71(0xe0));jadibot(ikyy,from,sender,reply,kyy);
