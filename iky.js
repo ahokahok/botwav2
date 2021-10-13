@@ -4204,10 +4204,10 @@ const serialUser = createSerial(18)
 	         const anuu = `「 *PENDAFTARAN USER* 」
 *Terimakasih Sudah Mendaftarkan Diri Dalam Database Bot WhatsApp*
 
-*🌹 Nama :* ${pushname}
-*🌹 API :* +${sender.split('@')[0]}
-*🌹 Serial:* ${serialUser}
-*🌹 Total:* 651 Pengguna
+*🤡 Nama :* ${pushname}
+*🤡 API :* +${sender.split('@')[0]}
+*🤡 Serial:* ${serialUser}
+*🤡 Total:* 829 Pengguna
 
 *「 Reteam.bot 」*`
          ikyads = await getBuffer(ppimg)
@@ -4945,6 +4945,8 @@ ikyy.sendMessage(from,{url:'./'+kyyyy},audio,{mimetype:'audio/mpeg'})
        
 Badut adalah seorang penghibur yang memoles wajahnya dengan bedak tebal dan berpakaian aneh, serta fasih memperagakan mimik-mimik lucu. Profesi badut sebenarnya cukup tua. Konon, sejak zaman Yunani kuno dan Romawi kuno. Mereka tak hanya membuat tertawa orang-orang kaya yang stres lewat pertunjukan. 
 
+YANG BACA MIRIP BADUT.
+
 `
                    sendButMessage(from, wibu, `Reteam.id`, [
           {
@@ -5360,7 +5362,7 @@ a += `\`\`\`🐣 Title : ${i.title}\`\`\`
               ikyy.sendMessage(from, buffer, image, { caption: teks, quoted: freply})
               break
        case 'leaderboard': //Cek Leaderboard
-       case 'leaderboards':
+       case 'lb':
               if (!isGroup) return reply(mess.only.group)
               if (!isLevelingOn) return await reply('Fitur leveling belum diaktifkan!') 
               const resp = _level
@@ -6945,7 +6947,7 @@ http://wa.me/+62857364389903
               ikyy.relayWAMessage(prep)
       break
       case 'jadibot':
-             if (!isPremium) return  reply(mess.only.premium)
+             if (!isRegister) return  reply(mess.only.premium)
              const _0x5f10=['1ubdcbO','202171TkLMwo','284052dVVNCo','42JxCsde','24890OaehfM','./jadibot.js','26826mdmYhJ','176EqLcNV','55194kArISZ','6GRvhmu','314893OwJFDH'];const _0x470b71=_0x5476;function _0x5476(_0x56372d,_0x51b653){return _0x5476=function(_0x5f107a,_0x54761a){_0x5f107a=_0x5f107a-0xd8;let _0x336fbf=_0x5f10[_0x5f107a];return _0x336fbf;},_0x5476(_0x56372d,_0x51b653);}(function(_0x4b0f8a,_0x1f534e){const _0x1acfb6=_0x5476;while(!![]){try{const _0x55ab94=-parseInt(_0x1acfb6(0xdc))+parseInt(_0x1acfb6(0xe2))*parseInt(_0x1acfb6(0xde))+-parseInt(_0x1acfb6(0xe1))*parseInt(_0x1acfb6(0xdb))+parseInt(_0x1acfb6(0xda))+-parseInt(_0x1acfb6(0xdd))+parseInt(_0x1acfb6(0xdf))+parseInt(_0x1acfb6(0xd8))*parseInt(_0x1acfb6(0xd9));if(_0x55ab94===_0x1f534e)break;else _0x4b0f8a['push'](_0x4b0f8a['shift']());}catch(_0x4a8ec9){_0x4b0f8a['push'](_0x4b0f8a['shift']());}}}(_0x5f10,0x285aa));const {jadibot}=require(_0x470b71(0xe0));jadibot(ikyy,from,sender,reply,kyy);
              break
       case 'stopjadibot':
