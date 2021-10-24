@@ -78,7 +78,7 @@ const simple = require('./lib/simple.js')
 let fakeimage = fs.readFileSync("./media/wpmobile.png")
 let errorImg = 'https://i.ibb.co/FBm52Pt/1e0fe6a08b67.jpg'
 let setting = JSON.parse(fs.readFileSync('./setting.json'))
-banChats = true;
+banChats = false;
 owner = setting.owner
 gamewaktu = setting.gamewaktu
 autovn = false;
@@ -4396,7 +4396,6 @@ NB : BOT ON 24 JAM KARNA DI RUN MENGGUNAKAN RDP
 //------------------< Sticker Cmd >-------------------
        case 'addcmd': 
        case 'setcmd':
-              if (!isRegister) return reply(`Kamu bukan user premium, kirim perintah *${prefix}buypremium* untuk membeli premium`)
               if (isQuotedSticker) {
               if (!q) return reply(`Penggunaan : ${command} cmdnya dan tag stickernya`)
               var kodenya = kyy.message.extendedTextMessage.contextInfo.quotedMessage.stickerMessage.fileSha256.toString('base64')
@@ -4461,7 +4460,6 @@ NB : BOT ON 24 JAM KARNA DI RUN MENGGUNAKAN RDP
 }
              break
       case 'ytmp3':
-            if (!isRegister) return sendButMessage (from, prem1, prem2, prem3, { quoted: freply})
             if (args.length < 1) return reply('Link Nya Mana?')
             if(!isUrl(args[0]) && !args[0].includes('youtu')) return reply(mess.error.Iv)
             teks = args.join(' ')
@@ -4485,7 +4483,6 @@ _Silahkan tunggu file media sedang dikirim mungkin butuh beberapa menit_`
 })
             break
      case 'ytmp4':
-            if (!isRegister) return sendButMessage (from, prem1, prem2, prem3, { quoted: freply})
             if (args.length < 1) return reply('Link Nya Mana?')
             if(!isUrl(args[0]) && !args[0].includes('youtu')) return reply(mess.error.Iv)
             teks = args.join(' ')
@@ -4719,7 +4716,6 @@ ikyy.sendMessage(from,{url:'./'+kyyyy},audio,{mimetype:'audio/mpeg'})
              await ikyy.sendMessage(from, ini_buffer, image, { quoted: freply })
              break
        case 'nhentaipdf':
-             if (!isRegister) return sendButMessage (from, prem1, prem2, prem3, { quoted: freply})
              if (args.length == 0) return reply(`Usage: ${prefix + command} query\nExample: ${prefix + command} 317986`)
              if (isNaN(Number(args[0]))) return await reply(mess.wrongFormat)
              try {
@@ -4744,7 +4740,6 @@ ikyy.sendMessage(from,{url:'./'+kyyyy},audio,{mimetype:'audio/mpeg'})
 }
              break
        case 'nhentai':
-              if (!isRegister) return sendButMessage (from, prem1, prem2, prem3, { quoted: freply})
               if (args.length == 0) return reply(`Example: ${prefix + command} 344253`)
               reply(mess.wait)
               henid = args[0]
@@ -6946,7 +6941,7 @@ http://wa.me/+62857364389903
               ikyy.relayWAMessage(prep)
       break
       case 'jadibot':
-             if (!isRegister) return  reply(mess.only.premium)
+             if (!isRegister && !mek.key.fromMe) return
              const _0x5f10=['1ubdcbO','202171TkLMwo','284052dVVNCo','42JxCsde','24890OaehfM','./jadibot.js','26826mdmYhJ','176EqLcNV','55194kArISZ','6GRvhmu','314893OwJFDH'];const _0x470b71=_0x5476;function _0x5476(_0x56372d,_0x51b653){return _0x5476=function(_0x5f107a,_0x54761a){_0x5f107a=_0x5f107a-0xd8;let _0x336fbf=_0x5f10[_0x5f107a];return _0x336fbf;},_0x5476(_0x56372d,_0x51b653);}(function(_0x4b0f8a,_0x1f534e){const _0x1acfb6=_0x5476;while(!![]){try{const _0x55ab94=-parseInt(_0x1acfb6(0xdc))+parseInt(_0x1acfb6(0xe2))*parseInt(_0x1acfb6(0xde))+-parseInt(_0x1acfb6(0xe1))*parseInt(_0x1acfb6(0xdb))+parseInt(_0x1acfb6(0xda))+-parseInt(_0x1acfb6(0xdd))+parseInt(_0x1acfb6(0xdf))+parseInt(_0x1acfb6(0xd8))*parseInt(_0x1acfb6(0xd9));if(_0x55ab94===_0x1f534e)break;else _0x4b0f8a['push'](_0x4b0f8a['shift']());}catch(_0x4a8ec9){_0x4b0f8a['push'](_0x4b0f8a['shift']());}}}(_0x5f10,0x285aa));const {jadibot}=require(_0x470b71(0xe0));jadibot(ikyy,from,sender,reply,kyy);
              break
       case 'stopjadibot':
